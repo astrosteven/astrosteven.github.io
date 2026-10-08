@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About &mdash; Steven L. Finkelstein</title>
+<meta name="description" content="About Prof. Steven L. Finkelstein — astronomer at UT Austin, Director of the Cosmic Frontier Center, and PI of the JWST CEERS survey." />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="nav" id="nav"><div class="nav-inner">
+	<a class="brand" href="index.html">Steven L. Finkelstein<span class="dot">.</span></a>
+	<button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+	<nav class="menu"><ul id="menu">
+		<li><a href="about.html" class="active">About</a></li>
+		<li><a href="research.html">Research</a></li>
+		<li><a href="group.html">Group</a></li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a href="news.html">News &amp; Media</a></li>
+		<li><a href="teaching.html">Teaching</a></li>
+		<li><a class="cv" href="files/Finkelstein_CV.pdf">&darr; CV</a></li>
+	</ul></nav>
+</div></header>
+
+<!-- MASTHEAD -->
+<section class="mast"><div class="wrap">
+	<div class="mast-grid">
+		<img class="portrait" src="images/sf_headshot.jpg" alt="Steven L. Finkelstein" />
+		<div>
+			<div class="eyebrow">About</div>
+			<h1>Steven L. Finkelstein</h1>
+			<div class="titles">
+				Professor &amp; Isabel McCutcheon Harte Centennial Chair<br>
+				Director, <b>Cosmic Frontier Center</b> &nbsp;&middot;&nbsp; PI, <b>JWST CEERS Survey</b><br>
+				Department of Astronomy &middot; The University of Texas at Austin
+			</div>
+			<div class="btns">
+				<a class="btn btn-p" href="files/Finkelstein_CV.pdf">&darr; Download CV</a>
+				<a class="btn btn-g" href="files/Finkelstein_ShortCV.pdf">Short CV</a>
+				<a class="btn btn-g" href="mailto:stevenf@astro.as.utexas.edu">Contact</a>
+			</div>
+		</div>
+	</div>
+</div></section>
+
+<!-- BIO -->
+<section class="block"><div class="wrap">
+	<div class="prose">
+		<p>Steven L. Finkelstein is a professor in the Department of Astronomy at The University of Texas at Austin, where he holds the Isabel McCutcheon Harte Centennial Chair and directs the <a href="https://astronomy.utexas.edu/research/cosmic-frontier-center" target="_blank" rel="noopener">Cosmic Frontier Center</a>. His work addresses a fundamental question: when and how did the first galaxies form out of the cosmic dark ages?</p>
+
+		<p>He is the Principal Investigator of the JWST <a href="research.html">CEERS</a> survey, one of the Early Release Science programs of the James Webb Space Telescope. His <a href="research.html">research</a> spans the first galaxies, the reionization of the intergalactic medium, and the earliest supermassive black holes &mdash; central questions about the universe's first billion years. Together with his group and collaborators, he has contributed to the discovery and confirmation of some of the earliest galaxies yet observed, including "Maisie's Galaxy," named after his daughter.</p>
+
+		<p>His team's work with JWST and Hubble has helped sharpen our picture of the early universe, from unexpectedly bright early galaxies to a surprising population of growing black holes. This work has been featured in the <a href="news.html">news and media</a>. In 2022 he testified before the U.S. House Committee on Science, Space, and Technology on the initial science results from JWST, and in 2025 he delivered the American Astronomical Society's Fred Kavli Plenary Lecture.</p>
+
+		<p>Alongside his research, he is committed to mentoring the next generation of scientists &mdash; from postdoctoral fellows and graduate students to undergraduates in the Galaxy Evolution Vertically Integrated Project &mdash; and to sharing <a href="teaching.html">teaching resources</a> broadly.</p>
+
+		<p>For a complete record of appointments, publications, grants, and service, see the <a href="files/Finkelstein_CV.pdf">full CV &rarr;</a></p>
+	</div>
+</div></section>
+
+<footer class="site"><div class="wrap">
+	<div class="fgrid">
+		<div>
+			<h3>Steven L. Finkelstein</h3>
+			<p class="muted">Department of Astronomy &middot; The University of Texas at Austin &middot; Director, Cosmic Frontier Center.</p>
+			<div class="flinks">
+				<a href="mailto:stevenf@astro.as.utexas.edu">Email</a>
+				<a href="files/Finkelstein_CV.pdf">Full CV</a>
+				<a href="files/Finkelstein_ShortCV.pdf">Short CV</a>
+				<a href="https://astronomy.utexas.edu/research/cosmic-frontier-center" target="_blank" rel="noopener">Cosmic Frontier Center</a>
+				<a href="https://ceers.github.io" target="_blank" rel="noopener">CEERS</a>
+			</div>
+		</div>
+		<div>
+			<div class="eyebrow">Explore</div>
+			<div class="flinks col">
+				<a href="research.html">Research</a>
+				<a href="group.html">Group</a>
+				<a href="news.html">News &amp; Media</a>
+				<a href="teaching.html">Teaching</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+	</div>
+	<div class="copy"><span>&copy; 2026 Steven L. Finkelstein</span><span>Imagery: JWST CEERS &middot; NASA / STScI / CEERS</span></div>
+</div></footer>
+<script>
+const nav=document.getElementById('nav');const f=()=>nav.classList.toggle('scrolled',scrollY>40);f();addEventListener('scroll',f,{passive:true});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>
