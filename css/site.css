@@ -223,6 +223,7 @@ footer.site{padding:3.2rem 0 2.4rem;border-top:1px solid var(--line);margin-top:
 /* member role sub-note (e.g. "also PhD alumna") */
 .member .subnote{font-size:.78rem;color:var(--muted);margin-top:.5rem;font-style:italic}
 .member .mlink{display:inline-block;margin-top:.7rem;font-size:.82rem;color:var(--amber);font-weight:600}
+.member .mlink + .mlink{margin-left:1.1rem}
 
 /* alumni links */
 .prose ul li a.alum{color:var(--amber);border-bottom:1px solid rgba(236,172,78,.3)}
